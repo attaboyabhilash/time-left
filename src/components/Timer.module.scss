@@ -1,0 +1,26 @@
+.myCard {
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: rgb(25, 39, 52);
+  text-align: center;
+  h1 {
+    font-weight: 700;
+    font-size: 3.6em;
+    color: #fff;
+  }
+  h2 {
+    color: #f4f4f4;
+  }
+  p {
+    color: #c4c4c4;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .myCard {
+    width: 90%;
+    padding: 20px 15px;
+  }
+}
