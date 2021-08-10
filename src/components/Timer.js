@@ -11,7 +11,7 @@ const Timer = () => {
     const date1 = new Date(lastDate)
     const date2 = new Date()
     const diffDate = date2.getTime() - date1.getTime()
-    const daysPassed = Math.ceil(diffDate / (1000 * 3600 * 24))
+    const daysPassed = Math.round(diffDate / (1000 * 3600 * 24))
     return daysPassed
   }
   return (
