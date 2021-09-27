@@ -21,7 +21,20 @@ const Timer = () => {
       <p className={styles.optional}>
         Total Number of days - {countNumberOfDays()}
       </p>
-      <p>Last Date I talked - {dayjs(lastDate).format("MMM DD, YYYY")}</p>
+      <div className={styles.footerDate}>
+        <div>
+          <h3>Last Date</h3>
+          <p className={styles.footerDateFormat}>
+            {dayjs(lastDate).format("MMM DD, YYYY")}
+          </p>
+        </div>
+        <div>
+          <h3>Today's Date</h3>
+          <p className={styles.footerDateFormat}>
+            {dayjs(Date.now()).format("MMM DD, YYYY")}
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

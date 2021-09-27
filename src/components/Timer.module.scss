@@ -1,6 +1,7 @@
 .myCard {
   width: 450px;
-  padding: 25px 20px;
+  padding: 20px 0px;
+  padding-bottom: 0px;
   border-radius: 4px;
   background-color: rgb(25, 39, 52);
   text-align: center;
@@ -11,7 +12,11 @@
     margin-bottom: 0px;
   }
   h2 {
+    margin-top: 0px;
     color: #f4f4f4;
+  }
+  h3 {
+    color: #e0e0e0;
   }
   .optional {
     color: #c4c4c4;
@@ -22,12 +27,26 @@
     color: #c4c4c4;
     margin-bottom: 20px;
   }
+  .footerDate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #aaa;
+    div {
+      width: 50%;
+    }
+    div:first-child {
+      border-right: 1px solid #aaa;
+    }
+    .footerDateFormat {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width: 475px) {
   .myCard {
     width: 90%;
-    padding: 20px;
     h1 {
       font-size: 2.8em;
     }
